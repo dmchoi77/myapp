@@ -1,0 +1,68 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "ESNext",
+    "jsx": "preserve",
+    "jsxImportSource": "@emotion/react",
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "composite": true,
+    "incremental": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "paths": {
+      "~/src/*": [
+        "./src/*"
+      ],
+      "~/pages/*": [
+        "./src/pages/*"
+      ],
+      "~/components/*": [
+        "./src/components/*"
+      ],
+      "~/constants/*": [
+        "./src/constants/*"
+      ],
+      "~/views/*": [
+        "./src/views/*"
+      ],
+      "~/services/*": [
+        "./src/services/*"
+      ],
+      "~/assets/*": [
+        "./src/assets/*"
+      ],
+      "~/types/*": [
+        "./src/types/*"
+      ],
+      "~/css/*": [
+        "./src/css/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.ts",
+    "./src/**/*.json",
+    "./package.json"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
